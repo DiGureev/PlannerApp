@@ -9,18 +9,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(4px + 2vmin);
   color: #283034;
 }
 
 .cardsContainer{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .cardDay{
+  max-width: 200px;
   margin: 20px;
   padding: 10px;
   border-radius: 10px;
