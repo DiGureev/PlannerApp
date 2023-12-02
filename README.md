@@ -1,3 +1,6 @@
+![planner-project](https://github.com/DiGureev/PlannerAppRedux/assets/135432172/f963a5e4-3c4f-4fad-962b-6c0da7d89bbb)
+
+
 # PlannerAppRedux
 
 Full-Stack App build with:
