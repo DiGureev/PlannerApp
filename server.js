@@ -2,15 +2,18 @@ import express from 'express';
 import path from "path";
 import cors from 'cors';
 import dotenv from 'dotenv';
+import * as url from 'url';
 import { router } from './routes/tasks.route.js';
 
 const app = express();
 dotenv.config();
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 app.use(express.static(path.join(__dirname, "/client/build")));
+
 
 app.listen(process.env.PORT || 3001, () => {
   console.log(`run on ${process.env.PORT || 3001}`);
