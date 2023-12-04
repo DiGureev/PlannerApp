@@ -16,20 +16,19 @@
 .cardsContainer{
   width: 100%;
   max-width: 800px;
-  margin: auto;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 
 .cardDay{
-  max-width: 200px;
+  max-width: 30%;
   margin: 20px;
   padding: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   background-color: white;
-
 
 }
 
@@ -48,4 +47,10 @@ input {
   font-size: calc(10px + 1vmin);
   margin: 5px;
   padding: 5px 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .cardDay {
+    max-width: 100%
+  }
 }
